@@ -1,0 +1,15 @@
+def change():
+    amt = float(input("ENTER USD:"))
+    qut = divmod(amt, 0.25)
+    print("QUOTERS :",qut[0])
+    amt = round(qut[1],2)
+    dim = divmod(amt, 0.010)
+    print("DIME :",dim[0])
+    amt = round(dim[1],2)
+    nic = divmod(amt, 0.05)
+    print("NICKLES :",nic[0])
+    amt = round(nic[1],2)
+    penny = divmod(amt, 0.01)
+    print("PENNY :",penny[0])
+change()
+
